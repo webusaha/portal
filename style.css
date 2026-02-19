@@ -1,0 +1,133 @@
+:root {
+  --primary: #0f766e;
+  --secondary: #14b8a6;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #1f2937;
+  --border: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.tagline {
+  margin: 8px 0 16px;
+  opacity: 0.9;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+/* ===== GRID & CARD ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+  margin: 10px 0 8px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 12px;
+}
+
+/* ===== BADGE ===== */
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #e0f2f1;
+  color: #065f46;
+  width: fit-content;
+}
+
+/* ===== BUTTON ===== */
+.card a.btn {
+  margin-top: auto;
+  text-decoration: none;
+  color: white;
+  background: var(--primary);
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* ===== TAUTAN LIST ===== */
+.link-list {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+.link-list li {
+  margin-bottom: 6px;
+}
+
+.link-list a {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.link-list a:hover {
+  text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+  opacity: 0.7;
+}
