@@ -1,7 +1,7 @@
 // ================================
 // CONFIG
 // ================================
-const PORTAL_NAME = "Nama Portal Anda";
+const PORTAL_NAME = "PORTAL WEB USAHA";
 const SHEET_ID = "1f6CvFnZoUvqt8m_8tPQc4vSkakZL56i2P-4XQpzMqoY";
 
 document.getElementById("portalName").innerText = PORTAL_NAME;
@@ -47,8 +47,8 @@ async function loadData() {
     allData = [
       ...publishedPortal,
       {
-        title: "Tautan Penting",
-        description: "Akses cepat ke situs populer & rujukan UMKM",
+        title: "TAUTAN TERKAIT",
+        description: "Akses cepat ke situs populer & rujukan usaha",
         category: "Tautan",
         links: publishedTautan.map(t => ({
           name: t.name,
